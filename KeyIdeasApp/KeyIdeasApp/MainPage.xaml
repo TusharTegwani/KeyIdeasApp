@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KeyIdeasApp.MainPage"
+             Title="KeyIdeas InfoTech"
+             >
+
+
+
+    <Grid >
+        <Image Source="pex.jpg" Aspect="AspectFill"/>
+        
+        <StackLayout>
+            <Label Text="Xamarin.Forms" FontSize="40" TextColor="Pink" FontAttributes="Bold" Padding="10, 10" HorizontalTextAlignment="Center"/>
+            <Label Text="Machine Test" FontSize="40" TextColor="Pink" FontAttributes="Bold" Padding="0, 10" HorizontalTextAlignment="Center"/>
+            <Label Text="--------------------------------" FontSize="28" TextColor="GhostWhite" FontAttributes="Bold" Padding="0, 0" HorizontalTextAlignment="Center"/>
+            <Label Text="Task: A" FontSize="28" TextColor="White" FontAttributes="Bold" Padding="0, 10"/>
+            <Button Text="Click To Retrieve Data From API" FontSize="Large" BackgroundColor="Blue" TextColor="WhiteSmoke" Clicked="ButtonClicked" Margin="60, 35" CornerRadius="20"/>
+            <Label Text="--------------------------------" FontSize="28" TextColor="Pink" FontAttributes="Bold" Padding="0, 0" HorizontalTextAlignment="Center"/>
+            <Label Text="Task: B" FontSize="28" TextColor="White" FontAttributes="Bold" Padding="0, 10"/>
+            <Button Text="Go To Image Editor" FontSize="Large" BackgroundColor="Blue" TextColor="WhiteSmoke" Margin="70, 76" CornerRadius="20" Clicked="ButtonEditor"/>
+        </StackLayout>
+    </Grid >
+
+
+
+</ContentPage>

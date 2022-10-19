@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KeyIdeasApp.Views.UpdateSQL"
+             Title="Update User's data" 
+             BackgroundColor="LightYellow"
+             >
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="pexx.jpg" Aspect="AspectFill"/>
+            <StackLayout Margin="0,0,0,50">
+                <Label Text="Fill All The Entries Carefully !" FontSize="25" TextColor="CadetBlue" FontAttributes="Bold" HorizontalTextAlignment="Center" BackgroundColor="LightGray" HeightRequest="70" VerticalTextAlignment="Center"/>
+                <FlexLayout Margin="0,10">
+                    <Entry Placeholder="Enter ID" x:Name="Uid" x:DataType="x:Int16" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20"/>
+                    <Entry Placeholder="Enter Name" x:Name="Uname" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20"/>
+                    <Entry Placeholder="Enter Username" x:Name="Uusername" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20"/>
+                </FlexLayout>
+                <FlexLayout>
+                    <Entry Placeholder="Enter Email" WidthRequest="380" x:Name="Uemail" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20"/>
+                </FlexLayout>
+                <Label Text="Address:" FontAttributes="Bold" FontSize="Large"  Margin="10,0"/>
+                <FlexLayout Margin="10,10">
+                    <Entry Placeholder="Enter Street" x:Name="Ustreet" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                    <Entry Placeholder="Enter Suite" x:Name="Usuite" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                </FlexLayout>
+                <FlexLayout Margin="10,10">
+                    <Entry Placeholder="Enter City" x:Name="Ucity" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                    <Entry Placeholder="Enter Zipcode" x:Name="Uzc" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                </FlexLayout>
+                
+                <FlexLayout Margin="10,10">
+                    <Label Text="Goe:" FontAttributes="Bold" FontSize="Large"  Margin="4,0"/>
+                    <Entry Placeholder="Enter Latitude" x:Name="Ulat" Margin="4,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="140"/>
+                    <Entry Placeholder="Enter Longitude" x:Name="Ulng" Margin="6,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="150"/>
+                </FlexLayout>
+                <FlexLayout Margin="0,10">
+                    <Entry Placeholder="Enter Phone No." x:Name="Uphone" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                    <Entry Placeholder="Enter Website" x:Name="Uwebsite" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                </FlexLayout>
+                <Label Text="Company:" FontAttributes="Bold" FontSize="Large"  Margin="10,0"/>
+                <FlexLayout Margin="10,10">
+                    <Entry Placeholder="Enter Name" x:Name="Ucname" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                    <Entry Placeholder="Enter BS" x:Name="Ubs" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="180"/>
+                </FlexLayout>
+                <FlexLayout Margin="10,10">
+                    <Entry Placeholder="Enter Catch Phrase" x:Name="Ucp" Margin="8,0" BackgroundColor="PapayaWhip" FontSize="20" WidthRequest="380"/>
+                </FlexLayout>
+                <Button Text="Submit" BackgroundColor="Blue" TextColor="AliceBlue" FontSize="Medium" CornerRadius="0" WidthRequest="40" HeightRequest="50" Clicked="BtnSub"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

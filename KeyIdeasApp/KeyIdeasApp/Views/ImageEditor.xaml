@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KeyIdeasApp.Views.ImageEditor" 
+             Title="Task: B"
+             BackgroundColor="Azure"
+             >
+
+    
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="pexxxx.jpg" Aspect="AspectFill"/>
+            <StackLayout>
+                <Frame BackgroundColor="Gray" Opacity=".8" Padding="20">
+                    <Label Text="IMAGE EDITOR" FontAttributes="Bold,Italic" HorizontalTextAlignment="Center" TextColor="White" FontSize="46"/>
+                </Frame>
+
+                <FlexLayout Padding="30,20">
+                    <Button Text="Select Image" TextColor="White" BackgroundColor="Blue" Clicked="ButtonClicked" Margin="20,0" WidthRequest="120" CornerRadius="30"/>
+                    <Button Text="Capture Image" TextColor="White" BackgroundColor="Blue" Clicked="Button1Clicked" Margin="20,0" WidthRequest="120" CornerRadius="30"/>
+                    
+                </FlexLayout>
+                <RelativeLayout x:Name="rot_crop">
+                    <Image x:Name="resultImage" Margin="10" WidthRequest="400" HeightRequest="400"/>
+                        <Rectangle x:Name="rect"
+           BackgroundColor="Transparent" Stroke="transparent" StrokeThickness="4" HeightRequest="0" WidthRequest="0" 
+                                  
+                            ></Rectangle>
+                    
+
+
+                </RelativeLayout>
+                <FlexLayout>
+                    <Entry Placeholder="Enter Width:" x:Name="wid" FontSize="Medium" FontAttributes="Bold" Margin="20,0" WidthRequest="120" Opacity="0"/>
+                    <Entry Placeholder="Enter Height:" x:Name="hei" FontSize="Medium" FontAttributes="Bold" Margin="20,0" WidthRequest="120" Opacity="0"/>
+                </FlexLayout>
+                <FlexLayout Padding="10,10">
+                    <Button x:Name="cBtn" Text="Crop Image" Clicked="BtnCrop" TextColor="White" BackgroundColor="Orange"  Margin="2,0" WidthRequest="120" CornerRadius="30"/>
+                    <Button x:Name="rBtn" Text="Rotate Image" Clicked="BtnRot" TextColor="White" BackgroundColor="MediumVioletRed"  Margin="2,0" WidthRequest="130" CornerRadius="30"/>
+                    <Button x:Name="sBtn" Text="Save Image" Clicked="BtnSave" TextColor="White" BackgroundColor="YellowGreen"  Margin="2,0" WidthRequest="120" CornerRadius="30"/>
+                </FlexLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
